@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import SpotifyWebApi from "spotify-web-api-js";
 import { useStateValue } from "./StateProvider";
-import Player from "./Player";
+import Player from "./components/Player";
 import { getTokenFromResponse } from "./spotify";
 import "./css/App.css";
 import Login from "./components/Login";
@@ -10,13 +10,13 @@ const s = new SpotifyWebApi();
 
 function App() {
 	const [{ token }, dispatch] = useStateValue();
-
+	// Use effects run code based on a given condition.
 	useEffect(() => {
 		// Set token
 		const hash = getTokenFromResponse();
 		window.location.hash = "";
 		let _token = hash.access_token;
-
+		// gives the access token to the spotify api
 		if (_token) {
 			s.setAccessToken(_token);
 

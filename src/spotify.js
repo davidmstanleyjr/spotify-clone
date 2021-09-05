@@ -12,6 +12,7 @@ const scopes = [
 	"user-modify-playback-state",
 ];
 
+//this returns the access token
 export const getTokenFromResponse = () => {
 	return window.location.hash
 		.substring(1)
