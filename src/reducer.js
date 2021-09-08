@@ -49,12 +49,12 @@ const reducer = (state, action) => {
 				...state,
 				token: action.token,
 			};
-
 		case "SET_SPOTIFY":
 			return {
 				...state,
 				spotify: action.spotify,
 			};
+		// keep whatever the current state is but change the playlists to whatever we've passed in as the playlist.. It's listening for the logic that comes from App.js.
 
 		case "SET_PLAYLISTS":
 			return {
