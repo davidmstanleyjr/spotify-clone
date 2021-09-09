@@ -2,7 +2,7 @@
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 // Replace with your app's client ID, redirect URI and desired scopes
 const clientId = "163ffb82dee54531b94758e8be38f172";
-const redirectUri = "http://localhost:3000/";
+const redirectUri = "https://davids-spotify-clone.vercel.app/";
 const scopes = [
 	//this outlines what my clone app allows the user to do. This all comes from Spotify. It basically grants all the permissions
 	"user-read-currently-playing",
