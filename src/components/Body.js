@@ -1,8 +1,8 @@
 import React from "react";
 import "../css/Body.css";
-import Header from "./Header";
-import { useStateValue } from "./StateProvider";
-import SongRow from "./SongRow";
+import Header from "../components/Header";
+import { useStateValue } from "../StateProvider";
+import SongRow from "../components/SongRow";
 import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
@@ -13,7 +13,7 @@ function Body({ spotify }) {
 	const playPlaylist = (id) => {
 		spotify
 			.play({
-				context_uri: `spotify:playlist:`,
+				context_uri: `spotify:playlist:37i9dQZEVXcILMbzq4QW90`,
 			})
 			.then((res) => {
 				spotify.getMyCurrentPlayingTrack().then((r) => {
@@ -51,7 +51,7 @@ function Body({ spotify }) {
 	return (
 		<div className="body">
 			<Header spotify={spotify} />
-
+			{/* pulls in the discover weekly stuff */}
 			<div className="body__info">
 				<img src={discover_weekly?.images[0].url} alt="" />
 				<div className="body__infoText">
