@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# spotify-clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my attempt to improve upon what I did for my original spotify app. I wanted a project that plays music like my original project did but also looks like Spotify and pulls in images and playlists and everything. As of this moment, everything works accept for the play music part. The api allows me to pull in my username, avatar, playlists and discover weekly but I can't play music. I'm going to keep working on it until it does play music, but I have other projects I want to work on and will have to get back to this at a later date.
 
-## Available Scripts
+## Environment Setup
 
-In the project directory, you can run:
+1. Clone my repo at https://github.com/davidmstanleyjr/spotify-clone
 
-### `npm start`
+2. CD into it and run "npm install".
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3. Then type "npm start".
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+1. React
+2. Material UI
+3. Spotify Web api
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Issues
 
-### `npm run build`
+Like I said, the app doesn't play music but does everything else. I'm able to login and pull user data like username, avatar and playlists but the songs don't play. I have to work on that. I had to use react context api to put certain things in a state where they could easily be used elsewhere in the application, similar to redux. That part worked out fine but I can't play music. I check the console and you can see the object that has all the data for the songs but I can't get it to play. That tells me i'm doing certain things right but it simply doesn't work yet. I'm sure I can get it because i'm really close but I have to move on to other things at the moment. I will have to figure this out later.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Screenshot 1](images/snip1.PNG)
+![Screenshot 2](images/snip2.PNG)
+![Screenshot 3](images/snip3.PNG)
+![Screenshot 4](images/snip4.PNG)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Live Page
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Here is a link to the deployed site. I hope you have fun with it.
+https://davids-spotify-clone.vercel.app/
